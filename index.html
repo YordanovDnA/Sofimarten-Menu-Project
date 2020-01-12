@@ -1,0 +1,1303 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>SM| СОФИМАРТЕН</title>
+  <link rel="stylesheet" href="css/style.css">
+    <!-- Latest compiled and minified CSS -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+
+<!-- jQuery library -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+
+<!--   Exel plugin in jQuery -->
+<script src="src/jquery.table2excel.js"></script>
+
+
+<!-- Popper JS -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+
+<!-- Latest compiled JavaScript -->
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+  
+  <script src="https://ajax.aspnetcdn.com/ajax/jQuery/jquery-3.4.1.min.js"></script>
+</head>
+<body class="bg-dark">
+                    <!--   Заглавна секция -->
+  <header>
+    <h1 class="text-success">Софимартен меню панел</h1>
+  </header>
+                    <!--   Основна секция -->
+  <main>
+                <!--     Навигационно меню -->
+ <div class="row navigation-section">
+                     <!--  Пилешки ястия      -->
+    <nav class="navigations ">
+       <button type="button" class="btn btn-primary " data-toggle="collapse" data-target="#chiken-dishes">Пилешки ястия</button>
+    </nav>
+    
+    <nav class="navigations ">
+      <button type="button" class="btn btn-primary " data-toggle="collapse" data-target="#main-dishes">Основсни ястия</button>
+    </nav>
+    
+    <nav class="navigations ">
+      <button type="button" class="btn btn-primary " data-toggle="collapse" data-target="#pork-dishes">Свински ястия</button>
+    </nav>
+    
+    <nav class="navigations ">
+      <button type="button" class="btn btn-primary " data-toggle="collapse" data-target="#vegeterian-dishes">Постни ястия</button>
+    </nav>
+    
+    <nav class="navigations ">
+      <button type="button" class="btn btn-primary " data-toggle="collapse" data-target="#beef-dishes">Телешко</button>
+    </nav>
+    
+    <nav class="navigations ">
+      <button type="button" class="btn btn-primary " data-toggle="collapse" data-target="#lamb-dishes">Агнешко</button>
+    </nav>
+    
+    <nav class="navigations ">
+      <button type="button" class="btn btn-primary " data-toggle="collapse" data-target="#soup-dishes">Супи</button>
+    </nav>
+    
+    <nav class="navigations ">
+      <button type="button" class="btn btn-primary " data-toggle="collapse" data-target="#chinees-dishes">Китайски ястия</button>
+    </nav>
+    
+    <nav class="navigations ">
+      <button type="button" class="btn btn-primary " data-toggle="collapse" data-target="#fish-dishes">Рибни ястия</button>
+    </nav>
+      
+    <nav class="navigations ">
+      <button type="button" class="btn btn-primary " data-toggle="collapse" data-target="#deserts-dishes">Десерти</button>
+    </nav>
+      
+    <button id="newRow" type="button" class="btn btn-success navigations col-1">-</button>
+   
+    <button id="btnExport" onClick="fnExcelReport()" type="button" class="btn btn-warning navigations col-1">Export</button>
+
+    <button id="new-row-inputs" class="btn- btn-primary navigations">Добави продукти</button>
+    
+    <hr>
+    
+    </div>  
+ <div id="hide-section">
+       <div class="collapse hide bg-primary dishes" id="chiken-dishes">
+      <h2 class="text-light hiden-headers">Пилешки ястия</h2>
+         <button id="btn1" class="btn btn-light hide-buttons">
+           Азиатски кюфтетa
+         </button>
+         <button id="btn2" class="btn btn-light hide-buttons">
+           Воденички панирани
+         </button>
+         <button id="btn3" class="btn btn-light hide-buttons">
+           Воденички с ориз
+         </button>
+         <button id="btn4" class="btn btn-light hide-buttons">
+           Дробчета по селски
+         </button>
+         <button id="btn5" class="btn btn-light hide-buttons">
+           Крила на скара
+         </button>
+         <button id="btn6" class="btn btn-light hide-buttons">
+           Крила Провансал
+         </button>
+         <button id="btn7" class="btn btn-light hide-buttons">
+           Крила с мед
+         </button>
+         <button id="btn8" class="btn btn-light hide-buttons">
+           Крила с ориз
+         </button>
+         <button id="btn9" class="btn btn-light hide-buttons">
+           Къри Бухалки
+         </button>
+         <button id="btn10" class="btn btn-light hide-buttons">
+           Ориз с пиле и зеленчуци
+         </button>
+         <button id="btn11" class="btn btn-light hide-buttons">
+           Ориз с пиле и шунка
+         </button>
+         <button id="btn12" class="btn btn-light hide-buttons">
+           Палачинки с пил. месо
+         </button>
+         <button id="btn13" class="btn btn-light hide-buttons">
+           Печено пиле
+         </button>
+         <button id="btn14" class="btn btn-light hide-buttons">
+           Пил. дроб сърма
+         </button>
+         <button id="btn15" class="btn btn-light hide-buttons">
+           Пил. кюфтета с гъби
+         </button>
+         <button id="btn16" class="btn btn-light hide-buttons">
+           Пил. флейки с гъбен сос
+         </button>
+         <button id="btn17" class="btn btn-light hide-buttons">
+           Пил. флейки със сметана и пюре
+         </button>
+         <button id="btn18" class="btn btn-light hide-buttons">
+           Пил. Наденица за преправка
+         </button>
+         <button id="btn19" class="btn btn-light hide-buttons">
+           Пиле "Рокфорд"
+         </button>
+         <button id="btn20" class="btn btn-light hide-buttons">
+           Пиле грах
+         </button>
+         <button id="btn21" class="btn btn-light hide-buttons">
+           Пиле гювеч
+         </button>
+         <button id="btn22" class="btn btn-light hide-buttons">
+           Пиле Жулиен
+         </button>
+         <button id="btn23" class="btn btn-light hide-buttons">
+           Пиле Каша
+         </button>
+         <button id="btn24" class="btn btn-light hide-buttons">
+           Пил. с кис. зеле
+         </button>
+         <button id="btn26" class="btn btn-light hide-buttons">
+           Пиле лютика
+         </button>
+         <button id="btn27" class="btn btn-light hide-buttons">
+           Пиле мексико
+         </button>
+         <button id="btn28" class="btn btn-light hide-buttons">
+           Пиле по Ловджийски
+         </button>
+         <button id="btn29" class="btn btn-light hide-buttons">
+           Пиле с прясно зеле
+         </button>
+         <button id="btn30" class="btn btn-light hide-buttons">
+           Пиле с картофи
+         </button>
+         <button id="btn31" class="btn btn-light hide-buttons">
+           Пиле с ориз
+         </button>
+         <button id="btn32" class="btn btn-light hide-buttons">
+           Пиле с патладжан
+         </button>
+         <button id="btn33" class="btn btn-light hide-buttons">
+           Пиле "Славянски гювеч"
+         </button>
+         <button id="btn34" class="btn btn-light hide-buttons">
+           Пиле със зелен боб
+         </button>
+         <button id="btn35" class="btn btn-light hide-buttons">
+           Пиле - зелен боб и картофи
+         </button>
+         <button id="btn36" class="btn btn-light hide-buttons">
+           Пиле със зеленчуци
+         </button>
+         <button id="btn37" class="btn btn-light hide-buttons">
+           Пиле със спанак
+         </button>
+         <button id="btn38" class="btn btn-light hide-buttons">
+           Пиле Формаджи
+         </button>
+         <button id="btn39" class="btn btn-light hide-buttons">
+           Пиле Фрикасе
+         </button>
+         <button id="btn40" class="btn btn-light hide-buttons">
+           Пиле яхния
+         </button>
+         <button id="btn41" class="btn btn-light hide-buttons">
+           Пил. Кавърма
+         </button>
+         <button id="btn42" class="btn btn-light hide-buttons">
+           Пил. винен кебаб
+         </button>
+          <button id="btn57" class="btn btn-light hide-buttons">
+           Пилешки флейки със спанак
+         </button>
+         <button id="btn43" class="btn btn-light hide-buttons">
+           Пилешки хапки с гъби и пюре
+         </button>
+         <button id="btn44" class="btn btn-light hide-buttons">
+           Пилешки шницел
+         </button>
+         <button id="btn45" class="btn btn-light hide-buttons">
+           Пил. руло мозайка
+         </button>
+         <button id="btn46" class="btn btn-light hide-buttons">
+           Пил. сос Метакса
+         </button>
+         <button id="btn47" class="btn btn-light hide-buttons">
+           Пил. филе с гъби и лук
+         </button>
+         <button id="btn48" class="btn btn-light hide-buttons">
+           П-ла сусам и кус-кус
+         </button>
+         <button id="btn49" class="btn btn-light hide-buttons">
+           Половин печено пиле
+         </button>
+         <button id="btn50" class="btn btn-light hide-buttons">
+           Птиче гнездо
+         </button>
+         <button id="btn51" class="btn btn-light hide-buttons">
+           Птиче гнездо с маскарпоне
+         </button>
+         <button id="btn52" class="btn btn-light hide-buttons">
+           Пълнено пил. бутче
+         </button>
+         <button id="btn53" class="btn btn-light hide-buttons">
+           Пълнено пиле
+         </button>
+         <button id="btn54" class="btn btn-light hide-buttons">
+           Пържола бут с гъбен сос
+         </button>
+         <button id="btn55" class="btn btn-light hide-buttons">
+           Пържола бут със сусам
+         </button>
+         <button id="btn56" class="btn btn-light hide-buttons">
+           Филе със сушени домати
+         </button>
+       </div>
+    
+    <div class="collapse hide bg-primary dishes" id="main-dishes">
+       <h2 class="text-light hiden-headers">Основни ястия</h2>
+        
+      
+<!--       Бутоните идват тук -->
+      <button id="btn101" class="btn btn-light hide-buttons">
+           Кюфтета яхния
+         </button>
+      
+      <button id="btn102" class="btn btn-light hide-buttons">
+           Акула
+         </button>
+      
+      <button id="btn103" class="btn btn-light hide-buttons">
+           Гръцка мусака
+         </button>
+      
+      <button id="btn104" class="btn btn-light hide-buttons">
+           Гъби със зеленчуци
+         </button>
+      
+      <button id="btn105" class="btn btn-light hide-buttons">
+           Заек по ловджийски
+         </button>
+      
+      <button id="btn106" class="btn btn-light hide-buttons">
+           Запеканка с 4 вида сирена
+         </button>
+      
+       <button id="btn107" class="btn btn-light hide-buttons">
+           Зелеви сарми
+         </button>
+      
+       <button id="btn108" class="btn btn-light hide-buttons">
+           Канелони болонеза
+         </button>
+      
+       <button id="btn109" class="btn btn-light hide-buttons">
+           Качамак със сирене
+         </button>
+      
+       <button id="btn110" class="btn btn-light hide-buttons">
+           Крила с мед
+         </button>
+      
+       <button id="btn111" class="btn btn-light hide-buttons">
+           Кюфтета по цариградски
+         </button>
+      
+       <button id="btn112" class="btn btn-light hide-buttons">
+           Лаврак
+         </button>
+      
+       <button id="btn113" class="btn btn-light hide-buttons">
+           Лозови сарми с кайма
+         </button>
+      
+       <button id="btn114" class="btn btn-light hide-buttons">
+           Наденица с картофи
+         </button>
+      
+       <button id="btn115" class="btn btn-light hide-buttons">
+           Ориз с топено сирене и шунка
+         </button>
+      
+       <button id="btn116" class="btn btn-light hide-buttons">
+           Паста със спанак
+         </button>
+      
+        <button id="btn117" class="btn btn-light hide-buttons">
+           Пълнени кюфтета
+         </button>
+      
+       <button id="btn118" class="btn btn-light hide-buttons">
+           Пържени кюфтета
+         </button>
+      
+       <button id="btn119" class="btn btn-light hide-buttons">
+           Риба плакия
+         </button>
+      
+       <button id="btn120" class="btn btn-light hide-buttons">
+           Рибен пай
+         </button>
+       <button id="btn121" class="btn btn-light hide-buttons">
+           Руло мозайка от свинско
+         </button>
+      
+       <button id="btn122" class="btn btn-light hide-buttons">
+           Руло от гъби и топено сирене
+         </button>
+      
+       <button id="btn123" class="btn btn-light hide-buttons">
+           Руло стефани
+         </button>
+      
+       <button id="btn124" class="btn btn-light hide-buttons">
+           Талиатели
+         </button>
+      
+       <button id="btn125" class="btn btn-light hide-buttons">
+           Топени сирена
+         </button>
+      
+       <button id="btn126" class="btn btn-light hide-buttons">
+           Шотланско яйце
+         </button>
+      
+       <button id="btn127" class="btn btn-light hide-buttons">
+           Боб с бекон
+         </button>
+      
+       <button id="btn128" class="btn btn-light hide-buttons">
+           Боб с кисело зеле
+         </button>
+      
+       <button id="btn129" class="btn btn-light hide-buttons">
+           Боб с кюфтета
+         </button>
+      
+       <button id="btn130" class="btn btn-light hide-buttons">
+           Боб с наденица
+         </button>
+      
+       <button id="btn131" class="btn btn-light hide-buttons">
+           Боб с рагу
+         </button>
+      
+       <button id="btn132" class="btn btn-light hide-buttons">
+           Запеканка
+         </button>
+      
+       <button id="btn133" class="btn btn-light hide-buttons">
+           Запеканка асорти
+         </button>
+      
+       <button id="btn134" class="btn btn-light hide-buttons">
+           Запеканка с пилешко и топено сирене
+         </button>
+      
+       <button id="btn135" class="btn btn-light hide-buttons">
+           Кремвирш с кашкавал
+         </button>
+      
+       <button id="btn136" class="btn btn-light hide-buttons">
+           Кюфтета яхния
+         </button>
+      
+       <button id="btn137" class="btn btn-light hide-buttons">
+           Кюфтета по ловджийски
+         </button>
+      
+       <button id="btn138" class="btn btn-light hide-buttons">
+           Кюфтета по черпански
+         </button>
+      
+       <button id="btn139" class="btn btn-light hide-buttons">
+           Кюфтета с бял сос
+         </button>
+      
+       <button id="btn140" class="btn btn-light hide-buttons">
+           Кофтета с доматен сос
+         </button>
+      
+      <button id="btn141" class="btn btn-light hide-buttons">
+           Лазания със спанак
+         </button>
+      
+      <button id="btn142" class="btn btn-light hide-buttons">
+           Лазания
+         </button>
+      
+      <button id="btn143" class="btn btn-light hide-buttons">
+           Мусака
+         </button>
+      
+      <button id="btn144" class="btn btn-light hide-buttons">
+           Мусака от патладжан
+         </button>
+      
+      <button id="btn145" class="btn btn-light hide-buttons">
+           Мусака от тиквички
+         </button>
+      
+      <button id="btn146" class="btn btn-light hide-buttons">
+           Огретен
+         </button>
+      
+      <button id="btn147" class="btn btn-light hide-buttons">
+          Паста с пилешко
+         </button>
+      
+      <button id="btn148" class="btn btn-light hide-buttons">
+          Пълнени гъби
+         </button>
+      
+            <button id="btn149" class="btn btn-light hide-buttons">
+          Пълнени патладжани
+         </button>
+      
+      <button id="btn150" class="btn btn-light hide-buttons">
+          Пълнени тиквички
+         </button>
+      
+      <button id="btn151" class="btn btn-light hide-buttons">
+          Пълнени чушки
+         </button>
+      
+       <button id="btn152" class="btn btn-light hide-buttons">
+          Спагети болонезе
+         </button>
+      
+      <button id="btn153" class="btn btn-light hide-buttons">
+          Спагети Карбонара
+         </button>
+      
+      <button id="btn154" class="btn btn-light hide-buttons">
+          Спагети с риба тон
+         </button>
+      
+      <button id="btn155" class="btn btn-light hide-buttons">
+          Спаначен огретен
+         </button>
+      
+      <button id="btn156" class="btn btn-light hide-buttons">
+          Суфле
+         </button>
+      
+      <button id="btn157" class="btn btn-light hide-buttons">
+          Сьомга със шам фъстък + пюре
+         </button>
+      
+      <button id="btn158" class="btn btn-light hide-buttons">
+          Талиатели Болонезе
+         </button>
+      
+       <button id="btn159" class="btn btn-light hide-buttons">
+          Хемендекс
+         </button>
+      
+      
+      
+<!--       Бутоните свършват тук -->
+       </div>
+    
+    <div class="collapse hide bg-primary dishes" id="pork-dishes">
+       <h2 class="text-light hiden-headers">Свински ястия</h2>
+       
+         <button id="btn201" class="btn btn-light hide-buttons">
+          Качамак със свинско месо
+         </button>
+      
+          <button id="btn202" class="btn btn-light hide-buttons">
+          Праз със свинско
+         </button>
+      
+      <button id="btn203" class="btn btn-light hide-buttons">
+          Руло музайка със свинско
+         </button>
+      
+     <button id="btn204" class="btn btn-light hide-buttons">
+          Руло с гъби и лук
+         </button>
+      
+      <button id="btn205" class="btn btn-light hide-buttons">
+          Свинска вратна по ловджийски
+         </button>
+      
+      <button id="btn206" class="btn btn-light hide-buttons">
+          Свинска вратна с гъбен сос
+         </button>
+      
+      <button id="btn207" class="btn btn-light hide-buttons">
+          Свинска гъбена яхния
+         </button>
+      
+      <button id="btn208" class="btn btn-light hide-buttons">
+          Свинска кавърма
+         </button>
+      
+      <button id="btn209" class="btn btn-light hide-buttons">
+          Свински вратни карета
+         </button>
+      
+      <button id="btn210" class="btn btn-light hide-buttons">
+          Свински гърди на фурна
+         </button>
+      
+      <button id="btn211" class="btn btn-light hide-buttons">
+          Свински джулан с кисело зеле
+         </button>
+      
+      <button id="btn212" class="btn btn-light hide-buttons">
+          Свински задушен джулан
+         </button>
+      
+      <button id="btn213" class="btn btn-light hide-buttons">
+          Свински пръжки
+         </button>
+      
+      <button id="btn214" class="btn btn-light hide-buttons">
+          Свински ребра с зеле
+         </button>
+      
+      <button id="btn215" class="btn btn-light hide-buttons">
+          Свински сач
+         </button>
+      
+      <button id="btn216" class="btn btn-light hide-buttons">
+          Свински стек филе с гъби
+         </button>
+      
+      <button id="btn217" class="btn btn-light hide-buttons">
+          Свинско винен кебап
+         </button>
+      
+      <button id="btn218" class="btn btn-light hide-buttons">
+          Свинско гювеч
+         </button>
+      
+      <button id="btn219" class="btn btn-light hide-buttons">
+          Свинско Жулиен
+         </button>
+      
+      <button id="btn220" class="btn btn-light hide-buttons">
+          Свинско Мексико
+         </button>
+      
+      <button id="btn221" class="btn btn-light hide-buttons">
+          Свинско печено руло
+         </button>
+      
+      <button id="btn222" class="btn btn-light hide-buttons">
+          Свинско печено с пюре
+         </button>
+      
+      <button id="btn223" class="btn btn-light hide-buttons">
+          Свинсо по ловджиски
+         </button>
+      
+      <button id="btn224" class="btn btn-light hide-buttons">
+          Свинско с боб
+         </button>
+      
+      <button id="btn225" class="btn btn-light hide-buttons">
+          Свинско с грах
+         </button>
+      
+      <button id="btn226" class="btn btn-light hide-buttons">
+         Свинско с картофи
+         </button>
+      
+      <button id="btn227" class="btn btn-light hide-buttons">
+         Свинско с микс от гъби
+         </button>
+      
+      <button id="btn228" class="btn btn-light hide-buttons">
+          Свинско с ориз 
+        
+         </button>
+      <button id="btn229" class="btn btn-light hide-buttons">
+          Свинско с праз
+         </button>
+      
+      <button id="btn230" class="btn btn-light hide-buttons">
+          Свинско с пресен лук
+         </button>
+      
+      <button id="btn231" class="btn btn-light hide-buttons">
+          Свинско с зеле
+         </button>
+      
+      <button id="btn232" class="btn btn-light hide-buttons">
+          Свинско с зелен фасул
+         </button>
+      
+      <button id="btn233" class="btn btn-light hide-buttons">
+          Свинско с зеленчуци
+         </button>
+      
+      <button id="btn234" class="btn btn-light hide-buttons">
+          Свинско с сметана
+         </button>
+      
+      <button id="btn235" class="btn btn-light hide-buttons">
+          Свинско с спанак
+         </button>
+      
+      <button id="btn236" class="btn btn-light hide-buttons">
+          Стек "Антоанета"
+         </button>
+      
+        
+       </div>
+    
+    <div class="collapse hide bg-primary dishes" id="vegeterian-dishes">
+       <h2 class="text-light hiden-headers">Постни ястия</h2>
+      
+<!--       Бутоните за Постни ястия започват тук -->
+      
+         <button id="btn301" class="btn btn-light hide-buttons">
+         Ориз със задушени зеленчуци
+         </button>
+      
+         <button id="btn302" class="btn btn-light hide-buttons">
+        Пълнени Сухи Чушки с Праз и Ориз
+         </button>
+      
+         <button id="btn303" class="btn btn-light hide-buttons">
+          Боб с кисело зеле
+         </button>
+      
+         <button id="btn304" class="btn btn-light hide-buttons">
+          Боб с ориз на фурна
+         </button>
+      
+         <button id="btn305" class="btn btn-light hide-buttons">
+         Гъбена яхния
+         </button>
+      
+         <button id="btn306" class="btn btn-light hide-buttons">
+          Гъби Плакия
+         </button>
+      
+         <button id="btn307" class="btn btn-light hide-buttons">
+          Гювеч с Патладжани
+         </button>
+      
+         <button id="btn308" class="btn btn-light hide-buttons">
+          Диви гъби с ориз на фурна
+         </button>
+      
+         <button id="btn309" class="btn btn-light hide-buttons">
+        Зелен фасул с картофи
+         </button>
+      
+         <button id="btn310" class="btn btn-light hide-buttons">
+         Зеленчукови кюфте
+         </button>
+      
+         <button id="btn311" class="btn btn-light hide-buttons">
+         Имамбаялдъ 
+         </button>
+      
+         <button id="btn312" class="btn btn-light hide-buttons">
+        Картофено руло с зелена салата
+         </button>
+      
+         <button id="btn313" class="btn btn-light hide-buttons">
+         Картофи с ориз
+         </button>
+      
+         <button id="btn314" class="btn btn-light hide-buttons">
+          Карфиол с 4 вида сирена
+         </button>
+      
+         <button id="btn315" class="btn btn-light hide-buttons">
+       Качамак със сирене
+         </button>
+      
+         <button id="btn316" class="btn btn-light hide-buttons">
+          Каша от лапад
+         </button>
+      
+         <button id="btn317" class="btn btn-light hide-buttons">
+          Каша от спанак
+         </button>
+      
+         <button id="btn318" class="btn btn-light hide-buttons">
+          Кашкавал на фурна
+         </button>
+      
+         <button id="btn319" class="btn btn-light hide-buttons">
+          Киноа със зеленчуци
+         </button>
+      
+         <button id="btn320" class="btn btn-light hide-buttons">
+         Кисело зеле с ориз
+         </button>
+      
+         <button id="btn321" class="btn btn-light hide-buttons">
+       Кус-кус със зеленчуци
+         </button>
+      
+         <button id="btn322" class="btn btn-light hide-buttons">
+         Кюфтета от тиквички
+         </button>
+      
+         <button id="btn323" class="btn btn-light hide-buttons">
+        Ориз с кисело зеле на фурна
+         </button>
+      
+         <button id="btn324" class="btn btn-light hide-buttons">
+          Паниран карфиол 
+         </button>
+      
+         <button id="btn325" class="btn btn-light hide-buttons">
+         Панирани броколи
+         </button>
+      
+         <button id="btn326" class="btn btn-light hide-buttons">
+          Панирани гъби Кладница
+         </button>
+      
+         <button id="btn327" class="btn btn-light hide-buttons">
+          Панирани чушки
+         </button>
+      
+         <button id="btn328" class="btn btn-light hide-buttons">
+          Пармиджана
+         </button>
+      
+         <button id="btn329" class="btn btn-light hide-buttons">
+          Патладжан бюрек
+         </button>
+      
+         <button id="btn330" class="btn btn-light hide-buttons">
+          Патладжан с яйца
+         </button>
+      
+         <button id="btn331" class="btn btn-light hide-buttons">
+          Постен Миш-Маш
+         </button>
+      
+         <button id="btn332" class="btn btn-light hide-buttons">
+          Постни зелеви сарми 
+         </button>
+      
+         <button id="btn333" class="btn btn-light hide-buttons">
+          Постни лозови сарми
+         </button>
+      
+         <button id="btn334" class="btn btn-light hide-buttons">
+          Постни Пълнени Чушки
+         </button>
+      
+         <button id="btn335" class="btn btn-light hide-buttons">
+          Пресен лук с яйца
+         </button>
+      
+         <button id="btn336" class="btn btn-light hide-buttons">
+          Пресни картофи соте
+         </button>
+      
+         <button id="btn337" class="btn btn-light hide-buttons">
+          Пълнени Картофи 
+         </button>
+      
+         <button id="btn338" class="btn btn-light hide-buttons">
+          Пълнени тиквички с яйца и сирене
+         </button>
+      
+         <button id="btn339" class="btn btn-light hide-buttons">
+          Ризото с гъби
+         </button>
+      
+         <button id="btn340" class="btn btn-light hide-buttons">
+          Сирене пане
+         </button>
+      
+         <button id="btn341" class="btn btn-light hide-buttons">
+          Спаначени Кюфтета
+         </button>
+         <button id="btn342" class="btn btn-light hide-buttons">
+          Тракийски гювеч
+         </button>
+      
+         <button id="btn343" class="btn btn-light hide-buttons">
+        Чушки в доматен сос
+         </button>
+      
+         <button id="btn344" class="btn btn-light hide-buttons">
+          Шарена мусака
+         </button>
+      
+         <button id="btn345" class="btn btn-light hide-buttons">
+          Яхния от патладжани
+         </button>
+      
+         <button id="btn346" class="btn btn-light hide-buttons">
+          Спаначено суфле
+         </button>
+      
+         <button id="btn347" class="btn btn-light hide-buttons">
+          Боб яхния
+         </button>
+      
+         <button id="btn348" class="btn btn-light hide-buttons">
+          Вегетарианска мусака
+         </button>
+      
+         <button id="btn349" class="btn btn-light hide-buttons">
+          Ориз с горски гъби
+         </button>
+      
+         <button id="btn350" class="btn btn-light hide-buttons">
+          Гъби с ориз
+         </button>
+         <button id="btn351" class="btn btn-light hide-buttons">
+          ГЪБИ СЪС ЗЕЛЕНЧ
+         </button>
+      
+         <button id="btn352" class="btn btn-light hide-buttons">
+          Домати с ориз
+         </button> 
+      
+         <button id="btn353" class="btn btn-light hide-buttons">
+          Задушени зеленчуци
+         </button>  
+      
+        <button id="btn354" class="btn btn-light hide-buttons">
+          КАРТОФЕНА ЯХНИЯ
+         </button> 
+      
+      <button id="btn355" class="btn btn-light hide-buttons">
+          КАРТОФЕНО РУЛО
+         </button> 
+      
+      <button id="btn356" class="btn btn-light hide-buttons">
+          Леща яхния
+         </button> 
+      
+      <button id="btn357" class="btn btn-light hide-buttons">
+          Бъркани яйца с лук и сирене
+         </button>
+      
+      <button id="btn358" class="btn btn-light hide-buttons">
+          Маслини с ориз
+         </button>
+      
+      <button id="btn359" class="btn btn-light hide-buttons">
+          Миш-маш
+         </button>
+      
+      <button id="btn360" class="btn btn-light hide-buttons">
+          Патладжан с доматен сос
+         </button>
+      
+      <button id="btn361" class="btn btn-light hide-buttons">
+          Пиперки с ориз
+         </button>
+      
+      <button id="btn362" class="btn btn-light hide-buttons">
+          Постен грах
+         </button>
+      
+      <button id="btn363" class="btn btn-light hide-buttons">
+          Постен гювеч
+         </button>
+      
+      <button id="btn364" class="btn btn-light hide-buttons">
+          Постен зелен боб
+         </button>
+      
+      <button id="btn365" class="btn btn-light hide-buttons">
+          Постен Ориз
+         </button>
+      
+      <button id="btn366" class="btn btn-light hide-buttons">
+          Постен спанак
+         </button>
+      
+      <button id="btn367" class="btn btn-light hide-buttons">
+          Постна Мусака
+         </button>
+      
+      <button id="btn368" class="btn btn-light hide-buttons">
+         Постно  зеле
+         </button>
+      
+      <button id="btn369" class="btn btn-light hide-buttons">
+          Праз с ориз
+         </button>
+      
+      <button id="btn370" class="btn btn-light hide-buttons">
+          Праз с яйца и сирене
+         </button>
+      
+      <button id="btn371" class="btn btn-light hide-buttons">
+          Пресни картофи с ориз
+         </button>
+      
+      <button id="btn372" class="btn btn-light hide-buttons">
+          Пълнени чушки с яйца и сирене
+         </button>
+      
+      <button id="btn373" class="btn btn-light hide-buttons">
+          Пюре
+         </button>
+      
+      <button id="btn374" class="btn btn-light hide-buttons">
+          Сирене по шопски
+         </button>
+      
+      <button id="btn375" class="btn btn-light hide-buttons">
+          Спанак с ориз
+         </button>
+      
+      <button id="btn376" class="btn btn-light hide-buttons">
+          Спанак с яйца и сирене
+         </button>
+      
+      <button id="btn377" class="btn btn-light hide-buttons">
+         Сушени домати и маслини
+         </button>
+      
+      <button id="btn378" class="btn btn-light hide-buttons">
+          Тиквички с ориз
+         </button>
+      
+      <button id="btn379" class="btn btn-light hide-buttons">
+          Тракийски гювеч
+         </button>
+      
+      <button id="btn380" class="btn btn-light hide-buttons">
+         Чушки с яйца и сирене
+         </button>   
+      
+      <button id="btn381" class="btn btn-light hide-buttons">
+          Яйца по панагюрски
+         </button>
+      
+
+      
+<!--         Край на бутоните за постни ястия -->
+      
+       </div>
+    
+     <div class="collapse hide bg-primary dishes" id="beef-dishes">
+        <h2 class="text-light hiden-headers">Телешко</h2>
+         <button id="btn401" class="btn btn-light hide-buttons">
+          Боб с телешко рагу
+         </button>
+       
+       <button id="btn402" class="btn btn-light hide-buttons">
+          Телешки дроб по селски
+         </button>
+       
+       <button id="btn403" class="btn btn-light hide-buttons">
+          Телешка глава в шкембе
+         </button>
+       
+       <button id="btn404" class="btn btn-light hide-buttons">
+          Телешки Винен Кебап
+         </button>
+       
+       <button id="btn405" class="btn btn-light hide-buttons">
+          Телешки дроб
+         </button>
+       
+       <button id="btn406" class="btn btn-light hide-buttons">
+          Телешки Кюфтета
+         </button>
+       
+       <button id="btn407" class="btn btn-light hide-buttons">
+          Телешки Терин с ориз
+         </button>
+       
+       <button id="btn408" class="btn btn-light hide-buttons">
+          Готвено с Телешко Месо
+         </button>
+       
+      <button id="btn409" class="btn btn-light hide-buttons">
+          Телешко с грах
+         </button>
+       
+       <button id="btn410" class="btn btn-light hide-buttons">
+          Телешко с картофи
+         </button>
+       
+       <button id="btn411" class="btn btn-light hide-buttons">
+          Телешко със зелен фасул
+         </button>
+       </div>
+    
+    <div class="collapse hide bg-primary dishes" id="lamb-dishes">
+       <h2 class="text-light hiden-headers">Агнешко</h2>
+         <button id="btn501" class="btn btn-light hide-buttons">Аг. главичка по ловджийски</button>
+         <button id="btn502" class="btn btn-light hide-buttons">Агнешка дроб сърма</button>
+         <button id="btn503" class="btn btn-light hide-buttons">Агнешки Дроб по Селски</button>
+         <button id="btn504" class="btn btn-light hide-buttons">Агнешко печено</button>
+         <button id="btn505" class="btn btn-light hide-buttons">Агнешко с картофи </button>
+         <button id="btn506" class="btn btn-light hide-buttons">Агнешко с ориз </button>
+         <button id="btn507" class="btn btn-light hide-buttons">Агнешко със Спанак </button>
+         <button id="btn508" class="btn btn-light hide-buttons">Пълнена агнешка плешка</button>
+         <button id="btn509" class="btn btn-light hide-buttons">Пържен Агнешки Дроб</button>
+         <button id="btn510" class="btn btn-light hide-buttons">ИМЕ</button>
+       </div>
+    
+    <div class="collapse hide bg-primary dishes" id="soup-dishes">
+       <h2 class="text-light hiden-headers">Супи</h2>
+         <button id="btn601" class="btn btn-light hide-buttons">Агнешли телешки котлет</button>
+      
+         <button id="btn602" class="btn btn-light hide-buttons">Агнешка супа</button>
+      
+         <button id="btn603" class="btn btn-light hide-buttons">Боб чорба</button>
+      
+      <button id="btn604" class="btn btn-light hide-buttons">Гъбена супа</button>
+      
+      <button id="btn605" class="btn btn-light hide-buttons">Зеленчуков борш</button>
+      
+      <button id="btn606" class="btn btn-light hide-buttons">Зеленчукова супа</button>
+      
+      <button type="button" class="btn btn-light dropdown-toggle" data-toggle="dropdown">Крем супа </button>
+   
+      <div class="dropdown-menu">
+      
+      <input class="dropdown-item" id="add" name="listItem" placeholder=" от картофи" type="text">
+      
+      <button id="btn607" class="btn-light dropdown-item">Добави</button>
+      </div>
+      
+      <button id="btn608" class="btn btn-light hide-buttons">Курбан чорба</button>
+      
+      <button id="btn609" class="btn btn-light hide-buttons">Леща чорба</button>
+      
+      <button id="btn610" class="btn btn-light hide-buttons">Пача</button>
+      
+      <button id="btn611" class="btn btn-light hide-buttons">Пилешка супа</button>
+      
+      <button id="btn612" class="btn btn-light hide-buttons">Рибена супа</button>
+      
+      <button id="btn613" class="btn btn-light hide-buttons">Спаначена супа</button>
+      
+      <button id="btn614" class="btn btn-light hide-buttons">Супа от агнешки чревца</button>
+      
+      <button id="btn615" class="btn btn-light hide-buttons">Супа от лапад</button>
+      
+      <button id="btn616" class="btn btn-light hide-buttons">Супа от свинско месо</button>
+      
+      <button id="btn617" class="btn btn-light hide-buttons">Супа от сьомга</button>
+      
+      <button id="btn618" class="btn btn-light hide-buttons">Супа от телешко месо</button>
+      
+      <button id="btn619" class="btn btn-light hide-buttons">Супа топчета</button>
+      
+      <button id="btn620" class="btn btn-light hide-buttons">Таратор</button>
+      
+      <button id="btn621" class="btn btn-light hide-buttons">Телешки борш</button>
+      
+      <button id="btn622" class="btn btn-light hide-buttons">Телешко варено</button>
+      
+      <button id="btn623" class="btn btn-light hide-buttons">Шкембе чорба</button>
+      
+      </div>
+      
+  
+   
+         
+    
+    <div class="collapse hide bg-primary dishes" id="chinees-dishes">
+       <h2 class="text-light hiden-headers">Китайски ястия</h2>
+          <button id="btn701" class="btn btn-light hide-buttons">Китайски ориз</button>
+      
+          <button id="btn702" class="btn btn-light hide-buttons">Пиле в сладко кисел сос</button>
+      
+          <button id="btn703" class="btn btn-light hide-buttons">Пиле с гъби и бамбук</button>
+      
+          <button id="btn704" class="btn btn-light hide-buttons">Пиле по Съчуански</button>
+      
+          <button id="btn705" class="btn btn-light hide-buttons">Пиле с гъби и бамбук</button>
+      
+       </div>
+    
+    <div class="collapse hide bg-primary dishes" id="fish-dishes">
+      <h2 class="text-light hiden-headers">Рибни ястия</h2>
+      
+         <button id="btn801" class="btn btn-light hide-buttons">
+           Акула
+         </button>
+      <button id="btn802" class="btn btn-light hide-buttons">
+           Бяла риба пане
+         </button>
+      
+      <button id="btn803" class="btn btn-light hide-buttons">
+           Калмари
+         </button>
+      
+      <button id="btn804" class="btn btn-light hide-buttons">
+           Паламуд
+         </button>
+      
+      <button id="btn805" class="btn btn-light hide-buttons">
+           Пълнен шаран
+         </button>
+      
+      <button id="btn806" class="btn btn-light hide-buttons">
+          Пържен шаран
+         </button>
+      
+      <button id="btn807" class="btn btn-light hide-buttons">
+           Пържена пастърва
+         </button>
+      
+      <button id="btn808" class="btn btn-light hide-buttons">
+           Риба мерлуза пане
+         </button>
+      
+      <button id="btn809" class="btn btn-light hide-buttons">
+           Риба хек пане
+         </button>
+      
+      <button id="btn810" class="btn btn-light hide-buttons">
+           Рибени кюфтета с гарнитура
+         </button>
+      
+      <button id="btn811" class="btn btn-light hide-buttons">
+           Рибник по домашному
+         </button>
+      
+      <button id="btn812" class="btn btn-light hide-buttons">
+           Сафрид
+         </button>
+      
+      <button id="btn813" class="btn btn-light hide-buttons">
+           Скумрия на скара
+         </button>
+      
+      <button id="btn814" class="btn btn-light hide-buttons">
+           Скумрия по тетевенски
+         </button>
+      
+      <button id="btn815" class="btn btn-light hide-buttons">
+           Сьомга
+         </button>
+      
+      <button id="btn816" class="btn btn-light hide-buttons">
+           Цаца
+         </button>
+       </div>
+      
+    <div class="collapse hide bg-primary dishes" id="deserts-dishes">
+      <h2 class="text-light hiden-headers">Десерти</h2>
+         <button class="btn btn-light">
+           Спаначено суфле
+         </button>
+         <button class="btn btn-light fish-buttons">
+           Постен гювеч
+         </button>
+       </div>
+
+    </div>
+          
+      
+    <div id="theTable" class="tables bg-light">
+         <table class="table table-bordered inner-tables">
+    <thead>
+      <tr>
+        <th class="column0">-</th>
+        <th class="column1">Продукт</th>
+        <th class="columnM">Грамаж</th>
+        <th class="columnM">Цена</th>
+      </tr>
+    </thead>
+    <tbody id="item1">
+      
+    </tbody>
+  </table>
+      <table class="table table-bordered inner-tables">
+    <thead>
+      <tr>
+        <th class="column0">-</th>
+        <th class="column1">Продукт</th>
+        <th class="columnM">Грамаж</th>
+        <th class="columnM">Цена</th>
+      </tr>
+    </thead>
+    <tbody id="item2">
+
+    </tbody>
+  </table>
+      
+    </div>
+    <div class="row col-12 add-buttons">
+        <div class="col-6 mp-0">
+            <div class="row col-12 mp-0" id="hide-1001">
+                <button class=" btn btn-success btn-sm" id="btn1001">+</button>
+                <input style="width: 400px !important;" id="add-name1" type="text" placeholder="Име">
+                <input style="width: 90px !important;" id="add-quantity1" type="text" placeholder="Грамаж">
+                <input style="width: 80px !important;" id="add-price1" type="text" placeholder="Цена">               
+            </div>
+            <div class="row col-12 mp-0" id="hide-1002">
+                <button class=" btn btn-success btn-sm" id="btn1002">+</button>
+                <input style="width: 400px !important;" id="add-name2" type="text" placeholder="Име">
+                <input style="width: 90px !important;" id="add-quantity2" type="text" placeholder="Грамаж">
+                <input style="width: 80px !important;" id="add-price2" type="text" placeholder="Цена">               
+            </div>
+            <div class="row col-12 mp-0" id="hide-1003">
+                <button class=" btn btn-success btn-sm" id="btn1003">+</button>
+                <input style="width: 400px !important;" id="add-name3" type="text" placeholder="Име">
+                <input style="width: 90px !important;" id="add-quantity3" type="text" placeholder="Грамаж">
+                <input style="width: 80px !important;" id="add-price3" type="text" placeholder="Цена">               
+            </div>
+            <div class="row col-12 mp-0" id="hide-1004">
+                <button class=" btn btn-success btn-sm" id="btn1004">+</button>
+                <input style="width: 400px !important;" id="add-name4" type="text" placeholder="Име">
+                <input style="width: 90px !important;" id="add-quantity4" type="text" placeholder="Грамаж">
+                <input style="width: 80px !important;" id="add-price4" type="text" placeholder="Цена">               
+            </div>
+            <div class="row col-12 mp-0" id="hide-1005">
+                <button class=" btn btn-success btn-sm" id="btn1005">+</button>
+                <input style="width: 400px !important;" id="add-name5" type="text" placeholder="Име">
+                <input style="width: 90px !important;" id="add-quantity5" type="text" placeholder="Грамаж">
+                <input style="width: 80px !important;" id="add-price5" type="text" placeholder="Цена">               
+            </div>
+        </div>
+        <div class="col-6 mp-0">
+            <div class="row col-12 mp-0" id="hide-2001">
+                <button class=" btn btn-success btn-sm" id="btn2001">+</button>
+                <input style="width: 400px !important;" id="add-name101" type="text" placeholder="Име">
+                <input style="width: 90px !important;" id="add-quantity101" type="text" placeholder="Грамаж">
+                <input style="width: 80px !important;" id="add-price101" type="text" placeholder="Цена">               
+            </div>
+            <div class="row col-12 mp-0" id="hide-2002">
+                <button class=" btn btn-success btn-sm" id="btn2002">+</button>
+                <input style="width: 400px !important;" id="add-name102" type="text" placeholder="Име">
+                <input style="width: 90px !important;" id="add-quantity102" type="text" placeholder="Грамаж">
+                <input style="width: 80px !important;" id="add-price102" type="text" placeholder="Цена">               
+            </div>
+            <div class="row col-12 mp-0" id="hide-2003">
+                <button class=" btn btn-success btn-sm" id="btn2003">+</button>
+                <input style="width: 400px !important;" id="add-name103" type="text" placeholder="Име">
+                <input style="width: 90px !important;" id="add-quantity103" type="text" placeholder="Грамаж">
+                <input style="width: 80px !important;" id="add-price103" type="text" placeholder="Цена">               
+            </div>
+            <div class="row col-12 mp-0" id="hide-2004">
+                <button class=" btn btn-success btn-sm" id="btn2004">+</button>
+                <input style="width: 400px !important;" id="add-name104" type="text" placeholder="Име">
+                <input style="width: 90px !important;" id="add-quantity104" type="text" placeholder="Грамаж">
+                <input style="width: 80px !important;" id="add-price104" type="text" placeholder="Цена">               
+            </div>
+            <div class="row col-12 mp-0" id="hide-2005">
+                <button class=" btn btn-success btn-sm" id="btn2005">+</button>
+                <input style="width: 400px !important;" id="add-name105" type="text" placeholder="Име">
+                <input style="width: 90px !important;" id="add-quantity105" type="text" placeholder="Грамаж">
+                <input style="width: 80px !important;" id="add-price105" type="text" placeholder="Цена">               
+            </div>
+        </div>
+    </div>
+  </main>
+  <footer>
+  </footer>
+  <script src="js/main.js"></script>
+</body>
+</html>
